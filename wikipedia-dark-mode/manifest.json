@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name" : "Wikipedia: Dark Mode | Refresh to normal mode",
+    "description": "Now read your favorite articles on Wikipedia in Dark Mode.",
+    "version" : "1.0",
+    "content_scripts": [
+        {
+            "matches" : ["https://*.wikipedia.org/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "background": {
+        "scripts":["background.js"]
+    },
+    "browser_action": {
+        "default_icon" : "images/darkMode128.png"
+    },
+    "icons": {
+        "16": "images/darkMode16.png",
+        "32": "images/darkMode32.png",
+        "48": "images/darkMode48.png",
+        "128": "images/darkMode128.png"
+    }
+}
