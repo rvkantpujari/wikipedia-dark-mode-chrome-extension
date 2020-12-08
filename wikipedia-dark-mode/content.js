@@ -75,6 +75,24 @@ function wikiGoDark() {
         et.style.backgroundColor = "#000";
     }
 
+    let thTags = document.getElementsByTagName('th');
+    for(et of thTags) {
+        et.style.color = '#fff';
+        et.style.backgroundColor = "#000";
+    }
+
+    let trTags = document.getElementsByTagName('tr');
+    for(et of trTags) {
+        et.style.color = '#fff';
+        et.style.backgroundColor = "#000";
+    }
+
+    let tdTags = document.getElementsByTagName('td');
+    for(et of tdTags) {
+        et.style.color = '#fff';
+        et.style.backgroundColor = "#000";
+    }
+
     let input = document.getElementsByTagName('input')
     for(et of input) {
         //et.style.color = '#fff';
