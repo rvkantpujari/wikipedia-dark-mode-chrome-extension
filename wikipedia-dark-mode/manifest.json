@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name" : "Wikipedia: Dark Mode | Refresh to normal mode",
-    "description": "Now read your favorite articles on Wikipedia in Dark Mode.",
-    "version" : "1.0.1",
+    "name" : "Wikipedia: Dark Mode",
+    "description": "Now read your favorite articles on Wikipedia in Dark Mode. Just click on extension icon to toggle.",
+    "version" : "1.0.2",
     "content_scripts": [
         {
             "matches" : ["https://*.wikipedia.org/*"],

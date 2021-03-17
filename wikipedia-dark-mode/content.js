@@ -1,7 +1,10 @@
 chrome.runtime.onMessage.addListener(gotMessage);
 
-function gotMessage(request, sender, sendResponse) {
-    if(request.darkMode==="true")
+function gotMessage(msg, sender, sendResponse) 
+{
+    if(msg.darkMode === true)
+        window.location.reload();
+    else if(msg.darkMode === false)
         wikiGoDark();
 }
 
@@ -12,7 +15,6 @@ function wikiGoDark() {
     for(et of pTags) {
         et.style.color = '#fff';
         et.style.backgroundColor = "#000";
-        //et.innerHTML = "";
     }
 
     let divTags = document.getElementsByTagName('div');
@@ -95,7 +97,6 @@ function wikiGoDark() {
 
     let input = document.getElementsByTagName('input')
     for(et of input) {
-        //et.style.color = '#fff';
         et.style.backgroundColor = "#fff";
     }
 }

@@ -1,8 +1,10 @@
+let msg = {
+    darkMode : "true"
+}
+
 chrome.browserAction.onClicked.addListener(buttonClicked);
 
 function buttonClicked(tab) {
-    let msg = {
-        darkMode : "true"
-    }
+    msg.darkMode = !msg.darkMode;
     chrome.tabs.sendMessage(tab.id, msg);
 }
